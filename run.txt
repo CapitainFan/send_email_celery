@@ -1,0 +1,7 @@
+cd /Users/nikitagudkov/Documents/Dev/Celery/send_email_celery
+cd send_email
+
+python manage.py runserver
+python3 -m celery -A send_email worker -l info
+python3 -m celery -A send_email beat -l info
+docker run --rm -p 6379:6379 redis:7
