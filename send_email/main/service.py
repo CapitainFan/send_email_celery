@@ -5,7 +5,7 @@ def send(user_email):
     send_mail(
         'Вы подписались на рассылку',
         'Мы будем присылать Вам много спама.',
-        'sokolnikovbogdan1@gmail.com',
+        'bossbog18@gmail.com',
         [user_email],
         fail_silently=False,
     )
